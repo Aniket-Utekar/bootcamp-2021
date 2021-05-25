@@ -3,7 +3,11 @@ node{
     echo 'checking out the code'
     git 'https://github.com/Aniket-Utekar/war-test.git'
     }
-    
+    stage('Compile') {
+            steps {
+                echo 'Compile the source code' 
+            }
+        }    
     stage('build & test & package'){
         sh 'mvn clean package'
     }
