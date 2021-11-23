@@ -11,7 +11,7 @@ pipeline {
         echo "testing stage"
       }
     }
-    stages("packaging stage") {
+    stage("packaging stage") {
       steps {
         echo "packaging stage"
       }
